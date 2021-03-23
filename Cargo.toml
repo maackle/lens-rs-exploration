@@ -1,0 +1,18 @@
+[package]
+name = "lens-spike"
+version = "0.1.0"
+authors = ["Michael Dougherty <maackle.d@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+arbitrary = { version = "1.0", features = ["derive"] }
+lens-rs = { git = "https://github.com/TOETOE55/lens-rs.git" }
+lens-rs_derive = { git = "https://github.com/TOETOE55/lens-rs.git" }
+maplit = "1"
+
+[package.metadata.inwelling]
+lens-rs = true
+
+[patch.crates-io]
+# lens-rs = { path = "../lens-rs/lens-rs" }
+# lens-rs_derive = { path = "../lens-rs/lens-rs_derive" }
